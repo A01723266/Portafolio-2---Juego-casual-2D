@@ -31,6 +31,32 @@ public class BattleSettings
     // Intervalos min/max final para generar balas.
     public float finalMinSpawnTime;
     public float finalMaxSpawnTime;
+
+    [Header("Solo para modo Infinito")]
+    
+    // Caunto aumenta la velocidad fuera de el descanso
+    public float infiniteSpeedIncreasePerSecond;
+
+    // Caunto baja el intervalo min/max de tiempo de generacion fuera de el descanso
+    public float infiniteMinSpawnDecreasePerSecond;
+    public float infiniteMaxSpawnDecreasePerSecond;
+
+    // Limite minimo de intervalos de spawn para que no spawne en 0 segundos
+    public float minimumMinSpawnTime;
+    public float minimumMaxSpawnTime;
+
+    // Duracion de cada descanso
+    public float restDuration;
+
+    // Tiempo de presion antes de el primer descaso
+    public float initialRestSeparation;
+
+    // Segundos que aumenta la separaciond e cada descanso
+    public float restSeparationIncrementation;
+
+    // Spawn Max/Min en fase de descanso
+    public float restMinSpawnTime;
+    public float restMaxSpawnTime;
 }
 
 // Guarda la configuracion de Unity para cambiar de escena.

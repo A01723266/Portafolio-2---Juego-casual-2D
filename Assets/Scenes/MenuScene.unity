@@ -1031,7 +1031,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c4368e8c97910a4ea44fec9c41d8ca8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenuController
-  timedModeDuration: 90
+  timedModeDuration: 10
   easySettings:
     gameMode: 0
     timeLimit: 0
@@ -1041,6 +1041,16 @@ MonoBehaviour:
     initialMaxSpawnTime: 2
     finalMinSpawnTime: 0.6
     finalMaxSpawnTime: 1
+    infiniteSpeedIncreasePerSecond: 0
+    infiniteMinSpawnDecreasePerSecond: 0
+    infiniteMaxSpawnDecreasePerSecond: 0
+    minimumMinSpawnTime: 0
+    minimumMaxSpawnTime: 0
+    restDuration: 0
+    initialRestSeparation: 0
+    restSeparationIncrementation: 0
+    restMinSpawnTime: 0
+    restMaxSpawnTime: 0
   hardSettings:
     gameMode: 1
     timeLimit: 0
@@ -1050,6 +1060,16 @@ MonoBehaviour:
     initialMaxSpawnTime: 1.2
     finalMinSpawnTime: 0.25
     finalMaxSpawnTime: 0.6
+    infiniteSpeedIncreasePerSecond: 0
+    infiniteMinSpawnDecreasePerSecond: 0
+    infiniteMaxSpawnDecreasePerSecond: 0
+    minimumMinSpawnTime: 0
+    minimumMaxSpawnTime: 0
+    restDuration: 0
+    initialRestSeparation: 0
+    restSeparationIncrementation: 0
+    restMinSpawnTime: 0
+    restMaxSpawnTime: 0
   infiniteSettings:
     gameMode: 2
     timeLimit: 0
@@ -1059,6 +1079,16 @@ MonoBehaviour:
     initialMaxSpawnTime: 1.8
     finalMinSpawnTime: 0.2
     finalMaxSpawnTime: 0.55
+    infiniteSpeedIncreasePerSecond: 0.02
+    infiniteMinSpawnDecreasePerSecond: 0.0015
+    infiniteMaxSpawnDecreasePerSecond: 0.0025
+    minimumMinSpawnTime: 0.15
+    minimumMaxSpawnTime: 0.3
+    restDuration: 5
+    initialRestSeparation: 20
+    restSeparationIncrementation: 5
+    restMinSpawnTime: 1.2
+    restMaxSpawnTime: 2
 --- !u!1 &1453885049
 GameObject:
   m_ObjectHideFlags: 0

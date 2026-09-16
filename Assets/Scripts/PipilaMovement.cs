@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PipilaYPiedraController : MonoBehaviour
+public class PipilaMovement : MonoBehaviour
 {
     // Velocidad de giro
     [SerializeField] private float rotationSpeed = 1000f;

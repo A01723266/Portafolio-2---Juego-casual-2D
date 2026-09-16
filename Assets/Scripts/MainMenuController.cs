@@ -37,11 +37,19 @@ public class MainMenuController : MonoBehaviour
     {
         gameMode = GameMode.Infinite,
         initialBulletSpeed = 4.5f,
-        maximumBulletSpeed = 12f,
         initialMinSpawnTime = 1f,
         initialMaxSpawnTime = 1.8f,
-        finalMinSpawnTime = 0.2f,
-        finalMaxSpawnTime = 0.55f
+
+        infiniteSpeedIncreasePerSecond = 0.02f,
+        infiniteMinSpawnDecreasePerSecond = 0.0015f,
+        infiniteMaxSpawnDecreasePerSecond = 0.0025f,
+        minimumMinSpawnTime = 0.15f,
+        minimumMaxSpawnTime = 0.3f,
+        restDuration = 5f,
+        initialRestSeparation = 20f,
+        restSeparationIncrementation = 5f,
+        restMinSpawnTime = 1.2f,
+        restMaxSpawnTime = 2f,
     };
 
     public void SelectEasyMode()

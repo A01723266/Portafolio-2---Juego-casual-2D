@@ -14,8 +14,6 @@ public class BulletController : MonoBehaviour
     // Velocidad con la que se moverá la bala.
     [SerializeField] private float bulletSpeed = 5f;
 
-
-
     // Tiempo minimo y maximo entre cada bala
     [SerializeField] private float minSpawnTime = 1f;
     [SerializeField] private float maxSpawnTime = 3f;
@@ -29,6 +27,9 @@ public class BulletController : MonoBehaviour
     // Temporizador para saber cuando crear cada bala.
     private float timer;
 
+    // Define si se pueden spawnear balas
+    private bool canSpawn = true;
+
     private void Start()
     {
         // Al Iniciar el juego, elegimos el primer tiempo aleatorio.
@@ -37,6 +38,12 @@ public class BulletController : MonoBehaviour
 
     private void Update()
     {
+        // Evita que se generen mas balas
+        if (!canSpawn)
+        {
+            return;
+        }
+
         // Aumenta el contador usando tiempo real
         timer += Time.deltaTime;
         
@@ -58,6 +65,19 @@ public class BulletController : MonoBehaviour
     {
         // Elegir nuemro aleatoroio en los limites definidos.
         currentspawnTime = Random.Range(minSpawnTime, maxSpawnTime);
+    }
+
+    public void Configure(float newBulletSpeed, float newMinSpawnTime, float newMaxSpawnTime)
+    {
+        bulletSpeed = newBulletSpeed;
+        minSpawnTime = newMinSpawnTime;
+        maxSpawnTime = newMaxSpawnTime;
+    }
+
+    // Funcion para detener o renundar generacion de balas
+    public void SetSpawning(bool value)
+    {
+        canSpawn = value;
     }
 
     private void SpawnBullet()
