@@ -732,7 +732,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000035286, y: 649.94}
+  m_AnchoredPosition: {x: -0.0084058, y: 665.72}
   m_SizeDelta: {x: 1640.9, y: 77.235}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &421424616
@@ -840,7 +840,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1829290466203969166, guid: 3adb19c81eae1f5499985a7bcb79a838, type: 3}
+  m_Sprite: {fileID: -3332374503379510146, guid: 53dcde858e54ac7469117cb5b775f033, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2336,8 +2336,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000040293, y: -56.778}
-  m_SizeDelta: {x: 2652.6714, y: 1336.2}
+  m_AnchoredPosition: {x: -0.000027657, y: -45.674}
+  m_SizeDelta: {x: 2718.7183, y: 1377.1053}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1374775592
 MonoBehaviour:
@@ -2372,19 +2372,20 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Desarrollo\n\nDise\xF1o, programaci\xF3n, implementaci\xF3n y pruebas:\nMiguel
-    \xC1ngel \xC1vila H.\n\nEl juego fue dise\xF1ado, programado e integrado por
-    Miguel \xC1ngel \xC1vila H. Se utiliz\xF3 inteligencia artificial \xFAnicamente
-    como apoyo de consulta para resolver dudas de programaci\xF3n y comprender funciones
+  m_Text: "Desarrollo\n\nEl juego fue dise\xF1ado, programado e integrado por Miguel
+    \xC1ngel \xC1vila H. Se utiliz\xF3 inteligencia artificial \xFAnicamente como
+    apoyo de consulta para resolver dudas de programaci\xF3n y comprender funciones
     o conceptos desconocidos. El c\xF3digo final fue escrito, adaptado e implementado
     de manera propia.\n\nArte visual\n\nTodos los recursos visuales del juego fueron
     dibujados en pixel art por Miguel \xC1ngel \xC1vila H. Se utiliz\xF3 inteligencia
     artificial \xFAnicamente como referencia para obtener una base visual e inspiraci\xF3n
     durante el proceso; los sprites y elementos finales fueron recreados y adaptados
-    manualmente.\n\nM\xFAsica\n\nM\xFAsica obtenida de Pixabay, utilizada conforme
-    a la licencia de la plataforma:\n\nhttps://pixabay.com/music/urban-latin-latin-latino-mexican-music-398428/\nhttps://pixabay.com/music/latin-mexican-mexico-mexican-music-559374/\nhttps://pixabay.com/music/latin-latin-mexican-latino-music-474676/\nhttps://pixabay.com/music/world-latin-latin-mexican-salsa-music-326281/\nhttps://pixabay.com/music/upbeat-latin-latino-mexican-music-423107/\nhttps://pixabay.com/music/urban-latin-latin-latino-mexican-music-472086/\nhttps://pixabay.com/music/pop-latin-pop-music-348479/\n\nEfectos
-    de sonido\n\nEfectos de sonido de Kenney:\n\nhttps://kenney.nl/assets/interface-sounds\nhttps://kenney.nl/assets/impact-sounds\n\nRecursos
-    de audio utilizados conforme a las licencias de Pixabay y Kenney."
+    manualmente.\n\nFuente\n\nFuente obtenida de dafont, utilizada conforme a la
+    licencia de la plataforma:\n\nFonsts -  https://www.dafont.com/es/hewett-tsoi.d4888\n\nM\xFAsica
+    y Efectos de sonido\n\nM\xFAsica obtenida de Pixabay, utilizada conforme a la
+    licencia de la plataforma:\n\nhttps://pixabay.com/music/urban-latin-latin-latino-mexican-music-398428/\nhttps://pixabay.com/music/latin-mexican-mexico-mexican-music-559374/\nhttps://pixabay.com/music/latin-latin-mexican-latino-music-474676/\nhttps://pixabay.com/music/world-latin-latin-mexican-salsa-music-326281/\nhttps://pixabay.com/music/upbeat-latin-latino-mexican-music-423107/\nhttps://pixabay.com/music/urban-latin-latin-latino-mexican-music-472086/\nhttps://pixabay.com/music/pop-latin-pop-music-348479/\n\nEfectos
+    de sonido de Kenney, utilizada conforma a la lecencia de la plataforma:\n\nhttps://kenney.nl/assets/interface-sounds\nhttps://kenney.nl/assets/impact-sounds\n\nTodos
+    los recursos de audio utilizados conforme a las licencias de uso."
 --- !u!222 &1374775593
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3907,7 +3908,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2096107611}
   - component: {fileID: 2096107612}
-  - component: {fileID: 2096107613}
+  - component: {fileID: 2096107614}
+  - component: {fileID: 2096107615}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -4027,7 +4029,104 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &2096107613
+--- !u!82 &2096107614
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096107610}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &2096107615
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4039,10 +4138,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5ceb664967ebc43baddd64d9243a8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
-  gameMusic: {fileID: 8300000, guid: 8a0322f9e5e211c4d936cefcfd189bc5, type: 3}
-  selectSound: {fileID: 8300000, guid: 19deed956685636428a0fef7de6b5509, type: 3}
-  rockImpactSound: {fileID: 8300000, guid: 8043a05b20a700d4bb1379d8535e28ab, type: 3}
-  pipilaImpactSound: {fileID: 8300000, guid: f12350e67dfccca4087a323ef7e0158f, type: 3}
+  gameMusic:
+  - {fileID: 8300000, guid: b5e5fbd2d2c91ed4da23da8b49a84f0b, type: 3}
+  - {fileID: 8300000, guid: 57dab2878e201dd4da95776f57083eed, type: 3}
+  - {fileID: 8300000, guid: 3069347c2c1f8af4498582f9c09a1573, type: 3}
+  - {fileID: 8300000, guid: ac083a82bac78e646bf169ebeeeb2a6e, type: 3}
+  - {fileID: 8300000, guid: eb6bb1272530c834c846d2773d403632, type: 3}
+  - {fileID: 8300000, guid: 54296a5b74b224f49a68267ac4c65423, type: 3}
+  - {fileID: 8300000, guid: 52a3bbbedc1f3b54eb0220b8c135aea5, type: 3}
+  selectSound: {fileID: 8300000, guid: d6676def1ee319549bf41ed701714886, type: 3}
+  rockImpactSound: {fileID: 8300000, guid: f9fe42d9456235440b66ea16fcd0f7ca, type: 3}
+  pipilaImpactSound: {fileID: 8300000, guid: a3b81bde5e7f1cd48965bdd81f4ea488, type: 3}
+  musicSource: {fileID: 2096107612}
+  soundEffectsSource: {fileID: 2096107614}
+  musicVolume: 1
+  soundEffectsVolume: 0.9
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
