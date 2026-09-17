@@ -11,6 +11,9 @@ public class RockController : MonoBehaviour
         // Suma un punto en Counter Controller
         counterController.AddPoint();
 
+        // Reproduce sonido de bala bloqueada
+        AudioManager.instance.PlayRockImpactSound();
+
         // Elimina el objeto que toco el collider
         Destroy(collision.gameObject);
 

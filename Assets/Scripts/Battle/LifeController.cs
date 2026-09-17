@@ -20,6 +20,9 @@ public class LifeController : MonoBehaviour
     // Se usa para guardar tiempo sobrevivido o puntaje final.
     [SerializeField] private CounterController counterController;
 
+    // Controlador de animacion de la calle
+    [SerializeField] private StreetController streetController;
+
     [Header("Derrota")]
 
     // Color que tendrá una vida perdida.
@@ -67,6 +70,9 @@ public class LifeController : MonoBehaviour
     {
         // Ya no pueden quitarse más vidas.
         isDefeated = true;
+
+        // Detiene la animacion de calle y Pipila
+        streetController.enabled = false;
 
         // Guardamos ambos datos. LoseScene decidirá cuál mostrar
         // dependiendo de si el modo fue por tiempo o Infinito.
