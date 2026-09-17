@@ -17,6 +17,9 @@ public class CounterController : MonoBehaviour
     // Tiempo transcurrido
     private float timeElapsed;
 
+    //  Cosulta el tiempo sobrevivido de timeElapsed
+    public float survivedTime => timeElapsed;
+
     // Tiempo restante
     public float timeRemaning;
 
@@ -111,7 +114,7 @@ public class CounterController : MonoBehaviour
         int minutes = totalSeconds / 60;
         int seconds = totalSeconds % 60;
 
-        counterValue.text = minutes + " min  " + seconds + " seconds";
+        counterValue.text = minutes + " min  " + seconds + " seg";
     }
 
     // Muestra puntaje

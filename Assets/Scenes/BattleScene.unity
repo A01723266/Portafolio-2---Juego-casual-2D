@@ -944,6 +944,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 717531272}
   m_CullTransparentMesh: 1
+--- !u!1 &731501964
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 731501965}
+  - component: {fileID: 731501966}
+  m_Layer: 0
+  m_Name: LifeController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &731501965
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731501964}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1389271105}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &731501966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731501964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80786db5e6f2d9348811e74076ef6e95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LifeController
+  life1: {fileID: 1929362379}
+  life2: {fileID: 717531274}
+  life3: {fileID: 1147485223}
+  bulletController: {fileID: 1409949340}
+  counterController: {fileID: 1496091516}
+  lostLifeColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &916494477
 GameObject:
   m_ObjectHideFlags: 0
@@ -1217,6 +1267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7365dd87e14c38740b121276fc23b1ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PipilaRotation
+  lifeController: {fileID: 731501966}
 --- !u!70 &1178475969
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1429,6 +1480,7 @@ Transform:
   - {fileID: 1409949339}
   - {fileID: 1496091515}
   - {fileID: 1401020522}
+  - {fileID: 731501965}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1401020521
@@ -1750,7 +1802,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1 min   30 sec
+  m_Text: 1 min   30 seg
 --- !u!222 &1690045315
 CanvasRenderer:
   m_ObjectHideFlags: 0

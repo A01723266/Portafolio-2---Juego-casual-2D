@@ -52,6 +52,11 @@ public class MainMenuController : MonoBehaviour
         restMaxSpawnTime = 2f,
     };
 
+    private void SelectInfo()
+    {
+        SceneManager.LoadScene("InfoScene");
+    }
+
     public void SelectEasyMode()
     {
         StartGame(easySettings, GameMode.Easy);
@@ -82,5 +87,5 @@ public class MainMenuController : MonoBehaviour
 
         // Cambiamos de Scene a "BattleScene"
         SceneManager.LoadScene("BattleScene");
-    } 
+    }
 }

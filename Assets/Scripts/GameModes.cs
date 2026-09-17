@@ -65,9 +65,22 @@ public static class GameSession
     // Configuracion para BattleScene.
     public static BattleSettings CurrentSettings;
 
+    // Tiempo que el jugador sobrevivio
+    public static float LastSurvivedTime;
+
+    // Puntaje final obtenido
+    public static int LastScore;
+
     // Guarda la configuracion de el menu.
     public static void SetSettings(BattleSettings settings)
     {
         CurrentSettings = settings;
+    }
+
+    // Guarda el resultado final para LoseScene
+    public static void SaveResult(float survivedTime, int score)
+    {
+        LastSurvivedTime = survivedTime;
+        LastScore = score;
     }
 }

@@ -244,7 +244,7 @@ public class BattleModeController : MonoBehaviour
     private IEnumerator LoadWinScene()
     {
         // Espera 2 segundos
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3f);
 
         // Cambia de escena
         SceneManager.LoadScene("WinScene");
