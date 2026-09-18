@@ -39,7 +39,7 @@ public class BattleModeController : MonoBehaviour
         // Comprueba que haya configuracion definida.
         if (GameSession.CurrentSettings == null)
         {
-            Debug.LogError("No se encontró configuración de partida. ");
+            Debug.LogWarning("No se encontró configuración de partida. ");
             return;
         }
 

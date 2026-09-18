@@ -1,6 +1,4 @@
-using System.Collections;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class LifeController : MonoBehaviour
@@ -23,11 +21,15 @@ public class LifeController : MonoBehaviour
     // Controlador de animacion de la calle
     [SerializeField] private StreetController streetController;
 
+    [Header("Objeto con Animation Controller")]
+
+    // Animator del padre para activar la animación de muerte.
+    [SerializeField] private Animator pipilaYLosaAnimator;
+
     [Header("Derrota")]
 
     // Color que tendrá una vida perdida.
     [SerializeField] private Color lostLifeColor = Color.black;
-
 
     // Vidas actuales del jugador.
     private int currentLives = 3;
@@ -61,12 +63,12 @@ public class LifeController : MonoBehaviour
             life1.color = lostLifeColor;
 
             // Inicia la derrota final.
-            StartCoroutine(DefeatSequence());
+            DefeatSequence();
         }
     }
 
     // Guarda el resultado, espera 5 segundos y abre LoseScene.
-    private IEnumerator DefeatSequence()
+    private void DefeatSequence()
     {
         // Ya no pueden quitarse más vidas.
         isDefeated = true;
@@ -84,10 +86,7 @@ public class LifeController : MonoBehaviour
         // Detiene únicamente la generación de nuevas balas.
         bulletController.SetSpawning(false);
 
-        // Espera para que el jugador vea la última vida perdida.
-        yield return new WaitForSeconds(3f);
-
-        // Abre la escena de derrota.
-        SceneManager.LoadScene("LoseScene");
+        // Activa la animación final de muerte.
+        pipilaYLosaAnimator.SetTrigger("Death");
     }
 }

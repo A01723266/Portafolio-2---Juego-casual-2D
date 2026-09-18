@@ -34,13 +34,6 @@ public class CounterController : MonoBehaviour
 
     private void Awake()
     {
-        // Debug para detectar errores
-        if (GameSession.CurrentSettings == null)
-        {
-            Debug.LogError("No se encontró configuración de partida. ");
-            return;
-        }
-
         // Lee la configuracion de el menu
         currentSettings = GameSession.CurrentSettings;
 

@@ -276,6 +276,7 @@ GameObject:
   - component: {fileID: 513375453}
   - component: {fileID: 513375455}
   - component: {fileID: 513375454}
+  - component: {fileID: 513375456}
   m_Layer: 0
   m_Name: Losa TopDown
   m_TagString: Untagged
@@ -416,6 +417,28 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 9.12, y: 6.82}
   m_EdgeRadius: 0
+--- !u!95 &513375456
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513375451}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1dda91001f1d39842a739db42394407d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -994,6 +1017,7 @@ MonoBehaviour:
   bulletController: {fileID: 1409949340}
   counterController: {fileID: 1496091516}
   streetController: {fileID: 1308113885}
+  pipilaYLosaAnimator: {fileID: 1208618795}
   lostLifeColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &916494477
 GameObject:
@@ -1266,6 +1290,7 @@ GameObject:
   - component: {fileID: 1178475967}
   - component: {fileID: 1178475969}
   - component: {fileID: 1178475968}
+  - component: {fileID: 1178475970}
   m_Layer: 0
   m_Name: Pipila TopDown
   m_TagString: Untagged
@@ -1283,7 +1308,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.34999996, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalScale: {x: 0.28, y: 0.28, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1208618791}
@@ -1397,6 +1422,28 @@ CapsuleCollider2D:
   m_Offset: {x: 0.025155863, y: -0.6792902}
   m_Size: {x: 6.921927, y: 2.8966184}
   m_Direction: 1
+--- !u!95 &1178475970
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178475965}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 20ada035b7f956a43a4e6a15f3c4ca47, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1208618790
 GameObject:
   m_ObjectHideFlags: 0
@@ -1408,6 +1455,8 @@ GameObject:
   - component: {fileID: 1208618791}
   - component: {fileID: 1208618793}
   - component: {fileID: 1208618794}
+  - component: {fileID: 1208618795}
+  - component: {fileID: 1208618796}
   m_Layer: 0
   m_Name: Pipila y Losa
   m_TagString: Untagged
@@ -1475,6 +1524,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PipilaYPiedraController
   rotationSpeed: 1000
+--- !u!95 &1208618795
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208618790}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7759cadf47eeca046bfeec495466567e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1208618796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208618790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ad983fe0b2898429310add2602a2c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PipilaYLosaAnimationEvent
 --- !u!1 &1264361573
 GameObject:
   m_ObjectHideFlags: 0
@@ -1679,9 +1762,6 @@ MonoBehaviour:
   street2: {fileID: 1264361575}
   streetSpeed: 1
   streetLength: 36
-  pipilaParent: {fileID: 1208618791}
-  scaleAmount: 0.04
-  scaleSpeed: 4
 --- !u!1 &1389271104
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,6 +8,9 @@ public class RockController : MonoBehaviour
     // Se ejecuta la funcion cuando detecta algo collisiondando
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        // Aplicar animacion referenciando a el mismo objeto.
+        GetComponent<Animator>().SetTrigger("Damage");
+        
         // Suma un punto en Counter Controller
         counterController.AddPoint();
 

@@ -78,6 +78,9 @@ public class BulletController : MonoBehaviour
     public void SetSpawning(bool value)
     {
         canSpawn = value;
+
+        if (value == false)
+            DestroyAllBullets();
     }
 
     private void SpawnBullet()
@@ -133,5 +136,14 @@ public class BulletController : MonoBehaviour
 
     }
 
-    
+    // Elimina todas las balas activas de la escena.
+    private void DestroyAllBullets()
+    {
+        // Busca todas las balas usando su tag.
+        GameObject[] bullets = GameObject.FindGameObjectsWithTag("Bullet");
+
+        // Elimina cada bala encontrada.
+        foreach (GameObject bullet in bullets)
+            Destroy(bullet);
+    }
 }

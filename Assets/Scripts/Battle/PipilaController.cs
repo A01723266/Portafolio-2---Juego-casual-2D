@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PipilaRotation : MonoBehaviour
+public class PipilaController : MonoBehaviour
 {
     [Header("Life Controller")]
     [SerializeField] private LifeController lifeController;
@@ -8,6 +8,9 @@ public class PipilaRotation : MonoBehaviour
     // Se ejecuta la funcion cuando detecta algo collisiondando
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        // Aplicar animacion referenciando a el mismo objeto.
+        GetComponent<Animator>().SetTrigger("Damage");
+
         // Llama a la funcion para perder una vida.
         lifeController.LoseLife();
 
