@@ -7,8 +7,8 @@ public class WindowsDisplayController : MonoBehaviour
     private static WindowsDisplayController instance;
 
     [Header("Resolución de la ventana")]
-    [SerializeField] private int windowWidth = 1280;
-    [SerializeField] private int windowHeight = 720;
+    [SerializeField] private int windowWidth = 1920;
+    [SerializeField] private int windowHeight = 1080;
 
     private void Awake()
     {
@@ -30,7 +30,7 @@ public class WindowsDisplayController : MonoBehaviour
 
     private void Start()
     {
-        // Al iniciar el juego, abre una ventana fija de 1280 x 720.
+        // Al iniciar el juego, abre una ventana fija de 1920 x 1080.
         // Esta resolución siempre tiene aspecto 16:9.
         SetWindowed();
     }
@@ -63,7 +63,7 @@ public class WindowsDisplayController : MonoBehaviour
     private void SetWindowed()
     {
         // Cambia a ventana usando la resolución configurada arriba.
-        // Con 1280 x 720 la UI conserva aspecto 16:9.
+        // Con 1920 x 1080 la UI conserva aspecto 16:9.
         Screen.SetResolution(
             windowWidth,
             windowHeight,
@@ -76,8 +76,8 @@ public class WindowsDisplayController : MonoBehaviour
         // Resolución de respaldo si no se encuentra otra 16:9.
         Resolution bestResolution = new Resolution
         {
-            width = 1280,
-            height = 720
+            width = 1920,
+            height = 1080
         };
 
         // Recorre las resoluciones disponibles del monitor.
