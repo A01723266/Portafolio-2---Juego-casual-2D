@@ -2132,7 +2132,7 @@ MonoBehaviour:
     maximumBulletSpeed: 20
     initialMinSpawnTime: 1
     initialMaxSpawnTime: 1.2
-    finalMinSpawnTime: 0.5
+    finalMinSpawnTime: 0.4
     finalMaxSpawnTime: 0.8
     infiniteSpeedIncreasePerSecond: 0.067
     infiniteMinSpawnDecreasePerSecond: 0.0043
