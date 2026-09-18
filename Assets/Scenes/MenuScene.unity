@@ -2091,11 +2091,11 @@ MonoBehaviour:
     gameMode: 0
     timeLimit: 0
     initialBulletSpeed: 5
-    maximumBulletSpeed: 10
+    maximumBulletSpeed: 8
     initialMinSpawnTime: 1.2
     initialMaxSpawnTime: 2
-    finalMinSpawnTime: 0.6
-    finalMaxSpawnTime: 1
+    finalMinSpawnTime: 0.9
+    finalMaxSpawnTime: 1.2
     infiniteSpeedIncreasePerSecond: 0
     infiniteMinSpawnDecreasePerSecond: 0
     infiniteMaxSpawnDecreasePerSecond: 0
@@ -2110,11 +2110,11 @@ MonoBehaviour:
     gameMode: 1
     timeLimit: 0
     initialBulletSpeed: 8
-    maximumBulletSpeed: 15
-    initialMinSpawnTime: 0.6
-    initialMaxSpawnTime: 1
-    finalMinSpawnTime: 0.15
-    finalMaxSpawnTime: 0.4
+    maximumBulletSpeed: 10
+    initialMinSpawnTime: 1
+    initialMaxSpawnTime: 1.2
+    finalMinSpawnTime: 0.5
+    finalMaxSpawnTime: 0.8
     infiniteSpeedIncreasePerSecond: 0
     infiniteMinSpawnDecreasePerSecond: 0
     infiniteMaxSpawnDecreasePerSecond: 0
@@ -2130,10 +2130,10 @@ MonoBehaviour:
     timeLimit: 0
     initialBulletSpeed: 8
     maximumBulletSpeed: 20
-    initialMinSpawnTime: 0.8
+    initialMinSpawnTime: 1
     initialMaxSpawnTime: 1.2
-    finalMinSpawnTime: 0.15
-    finalMaxSpawnTime: 0.3
+    finalMinSpawnTime: 0.5
+    finalMaxSpawnTime: 0.8
     infiniteSpeedIncreasePerSecond: 0.067
     infiniteMinSpawnDecreasePerSecond: 0.0043
     infiniteMaxSpawnDecreasePerSecond: 0.006
